@@ -1,0 +1,226 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 750px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cheque-box {
+    margin-top: 30px;
+    width: 7.5in;
+    height: 3.5in;
+    position: relative;
+    border: 1px solid #000;
+    background-color: #fdfdfd;
+    background-image: url('../nabil.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.date-box,
+.name-box,
+.amount-words-box,
+.amount-figure-box {
+    font-size: 16px;
+    color: #333;
+}
+
+.date-box {
+    position: absolute;
+    top: 1.3cm;
+    left: 14.4cm;
+    letter-spacing: 0.42cm;
+}
+
+.name-box {
+    position: absolute;
+    top: 2.5cm;
+    left: 4.5cm;
+}
+
+.amount-words-box {
+    position: absolute;
+    top: 2.65cm;
+    left: 2.2cm;
+    width: 10cm;
+    line-height: 1.5;
+}
+
+.amount-figure-box {
+    position: absolute;
+    top: 3.6cm;
+    left: 15cm;
+}
+
+.ac-payee {
+    position: absolute;
+    top: 1.2cm;
+    left: 5cm;
+    transform: rotate(-45deg);
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+}
+
+.ac-payee::before,
+.ac-payee::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+}
+
+.ac-payee::before {
+    top: -5px;
+}
+
+.ac-payee::after {
+    bottom: -5px;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    color: #777;
+}
+
+/* Print styles */
+@media print {
+    body { 
+        font-family: Arial, sans-serif; 
+        font-size: 18px; 
+    }
+    
+    .cheque-box { 
+        width: 7.5in; 
+        height: 3.5in; 
+        position: relative; 
+        border: none; 
+    }
+    
+    .date-box { 
+        position: absolute; 
+        top: 0.8cm; 
+        left: 14.42cm; 
+        letter-spacing: 0.42cm; 
+        font-size: 16px; 
+    }
+    
+    .name-box { 
+        position: absolute; 
+        top: 1.9cm; 
+        left: 4.9cm; 
+        font-size: 15px; 
+    }
+    
+    .amount-words-box { 
+        position: absolute; 
+        top: 2.1cm; 
+        left: 3.2cm; 
+        width: 10cm; 
+        font-size: 15px; 
+        line-height: 1.3;
+    }
+    
+    .amount-figure-box { 
+        position: absolute; 
+        top: 2.95cm; 
+        left: 15.5cm; 
+        font-size: 16px; 
+    }
+    
+    .ac-payee { 
+        position: absolute; 
+        top: 0.7cm; 
+        left: 6cm; 
+        transform: rotate(-45deg); 
+        font-size: 15px; 
+        font-weight: bold; 
+    }
+    
+    .ac-payee::before, 
+    .ac-payee::after { 
+        content: ""; 
+        display: block; 
+        width: 100%; 
+        height: 1px; 
+        background-color: black; 
+        position: absolute; 
+    }
+    
+    .ac-payee::before { 
+        top: -5px; 
+    }
+    
+    .ac-payee::after { 
+        bottom: -5px; 
+    }
+} 
