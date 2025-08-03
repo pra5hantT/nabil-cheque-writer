@@ -41,21 +41,65 @@ Cheque Writer - Nabil Bank Nepal/
 ### Prerequisites
 - A modern web browser (Chrome, Firefox, Safari, Edge)
 - No server required - runs entirely in the browser
+- Git (optional, for cloning the repository)
 
-### Setup
-1. **Download/Clone** the project files
-2. **Ensure all files** are in the correct directory structure:
-   - `nabil.html`
-   - `styles/style.css`
-   - `js/script.js`
-   - `nabil.jpg`
-3. **Open** `nabil.html` in your web browser
+### Method 1: Direct Download
+1. **Download** the project files from the repository
+2. **Extract** the ZIP file to your desired location
+3. **Navigate** to the extracted folder
+4. **Open** `nabil.html` in your web browser
 
-### Quick Start
+### Method 2: Git Clone
 ```bash
-# Simply open the HTML file in your browser
-open nabil.html
+# Clone the repository
+git clone https://github.com/pra5hantT/nabil-cheque-writer.git
+
+# Navigate to the project directory
+cd nabil-cheque-writer
+
+# Open in your default browser
+start nabil.html  # Windows
+open nabil.html   # macOS
+xdg-open nabil.html  # Linux
 ```
+
+### Method 3: Manual Setup
+1. **Create** a new folder for the project
+2. **Download** all required files:
+   - `nabil.html` (main application)
+   - `styles/style.css` (styling)
+   - `js/script.js` (functionality)
+   - `nabil.jpg` (cheque background)
+3. **Ensure** the directory structure is correct:
+   ```
+   your-project-folder/
+   ├── nabil.html
+   ├── styles/
+   │   └── style.css
+   ├── js/
+   │   └── script.js
+   └── nabil.jpg
+   ```
+4. **Open** `nabil.html` in your browser
+
+### Verification
+After installation, verify that:
+- ✅ The application loads without errors
+- ✅ All form fields are visible and functional
+- ✅ The cheque background image displays correctly
+- ✅ Print functionality works properly
+
+### Troubleshooting Installation
+**If the application doesn't load:**
+- Check that all files are in the correct locations
+- Ensure file names match exactly (case-sensitive)
+- Verify that JavaScript is enabled in your browser
+- Check browser console for any error messages
+
+**If the background image doesn't appear:**
+- Confirm `nabil.jpg` is in the root directory
+- Check file permissions
+- Verify the image file is not corrupted
 
 ## 📖 Usage
 
